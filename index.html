@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de K-Dramas</title>
+    <Link rel ="shorcut icon" href = "page_icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="survey-form" method="post" class="form">
+        <h1 id="title">Formulario de encuesta de K-Dramas</h1>
+        <p id="description">Gracias por tomarte el tiempo de resolver este formulario</p>
+           
+        <div class="form_container">
+
+
+            <label id="name-label">
+                <p>NOMBRE</p><input class="entrada" id="name" name="name" type="text" required placeholder="Ingresa tu nombre">
+            </label>
+
+            <label id="email-label">
+                <p>CORREO ELECTRÓNICO</p><input class="entrada" id="email"  name="email" type="email" required placeholder="Ingresa tu correo">
+            </label>
+
+            <label id="number-label">
+                <p>EDAD</p><input class="entrada" id="number" name="number" type="number" min="15" max="99" placeholder="Edad">
+            </label>
+
+            <section class="flex-container">
+                <label class="caja" id="role-label">
+                    <p>¿QUÉ TIPOS DE DRAMAS PREFIERES?</p>
+                      <select name="select" id="dropdown">
+                          <option class="option" value="value1" selected>Selecciona un tipo</option>
+                          <option class="option" value="value2">En emisión</option>
+                          <option class="option" value="value3">Terminado</option>
+                          <option class="option" value="value4">Ambos</option>
+                      </select>
+                  </label>
+      
+                  <label class="caja" id="radio-label">
+                      <p>¿VES DRAMAS POR SU POPULARIDAD?</p>
+                      <input id="radio" type="radio" value="radio-1" name="radio-1">Si</input><span></span>
+                      <input id="radio" type="radio" value="radio-2" name="radio-1">No</input><span></span>
+                  </label>
+            </section>    
+           
+            <label id="checkbox-label">
+                <p>GÉNERO/S FAVORITOS</p>
+                <div id="checkboxes1">
+                    <input type="checkbox" value="ch-1">Acción</input>
+                    <input type="checkbox" value="ch-1">Comedia</input>
+                    <input type="checkbox" value="ch-1">Drama</input>
+                    <input type="checkbox" value="ch-1">Escolares</input>
+                    <input type="checkbox" value="ch-1">Fantasía</input>    
+                </div>
+                <div id="checkboxes2">
+                    <input type="checkbox" value="ch-1">Ficción</input>
+                    <input type="checkbox" value="ch-1">Misterio</input>
+                    <input type="checkbox" value="ch-1">Romance</input>
+                    <input type="checkbox" value="ch-1">Histórico</input>
+                    <input type="checkbox" value="ch-1">BL</input>
+                </div>
+            </label>
+
+            <label id="textarea-label">
+                <p>CUÉNTANOS SOBRE TU K-DRAMA FAVORITO?</p>
+                <textarea class="estilo_textarea">Mi K-Drama favorito es...</textarea>
+            </label>
+            
+            <input type="submit" id="submit">
+
+        </div>
+        
+    </form>
+</body>
+</html>

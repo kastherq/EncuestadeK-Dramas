@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(rgba(255, 53, 108, 0.2),  rgba(255, 53, 108, 0.5)), url(flower_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    min-height: 100vh;
+}
+
+#survey-form{
+    background-color: white;
+    margin: 1em auto;
+    width: 70%;
+    max-width: 70%;
+    padding: 4em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px;
+    text-align: center;
+}
+
+#title, #description{
+    text-align: center;
+}
+
+#description{
+    font-size: 1.2em;
+}
+
+.form_container{
+    margin-top: 4em;
+    display: grid;
+    gap: 2em;
+}
+
+form input{
+    font-size: 1rem;
+    padding: .6em .3em;
+    background: none;
+    color: black;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(61, 52, 54);
+}
+
+
+.entrada{
+    width:  100%;
+}
+
+form input:hover{
+    border-bottom: 2px solid rgba(255, 53, 108);
+
+}
+
+p{
+    text-align: left;
+    color:rgb(61, 52, 54);
+    font-weight: 700;
+}
+
+#dropdown{
+    width: 80%;
+    margin-right: 20%;
+    background-color:  rgba(163, 26, 63, 0.541);
+    color: white;
+    font-weight: 700;
+    padding: .6em  .3em;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    margin-right: 70%;
+    margin-top: 1em;
+}
+
+.option{
+    background-color: rgba(204, 33, 79, 0.541);
+    color: white;
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.caja{
+    margin: 10px;
+    padding: 1em;
+}
+
+#radio{
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+#checkboxes1{
+    margin: 10px;
+}
+
+.estilo_textarea{
+    width: 50%;
+    max-width: 50%;
+    height:20em;
+    max-height: 20em;
+    margin: auto;
+    border: 2px solid rgba(163, 26, 63, 0.541);
+    display: flex;
+    margin-top: 1em;
+}
+
+#submit{
+    border: none;
+    background-color:rgba(105, 13, 38, 0.774) ;
+    color: #FFFFFF;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px black;
+}
+
+#submit:hover{
+    background-color: rgba(163, 26, 63, 0.541);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px black;
+}
